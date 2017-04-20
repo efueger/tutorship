@@ -3,7 +3,7 @@
 FactoryGirl.define do
   factory :course do
     user
-    title       { Faker::Name.title }
+    title       { Faker::Book.title }
     description { Faker::Lorem.paragraph }
     repo_id     { Faker::Number.unique.number(8) }
     repo_name   { Faker::Internet.user_name(nil, %w[_ -]) }
