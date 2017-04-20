@@ -12,7 +12,7 @@ RSpec.describe Course, type: :model do
         .case_insensitive
     end
     it do
-      is_expected.to validate_uniqueness_of(:repo_slug)
+      is_expected.to validate_uniqueness_of(:repo_name)
         .case_insensitive
         .scoped_to(:user_id)
     end
@@ -20,16 +20,16 @@ RSpec.describe Course, type: :model do
     # Required fields
     it { is_expected.to validate_presence_of(:title) }
     it { is_expected.to validate_presence_of(:repo_id) }
-    it { is_expected.to validate_presence_of(:repo_slug) }
+    it { is_expected.to validate_presence_of(:repo_name) }
     it { is_expected.to validate_presence_of(:repo_url) }
 
     # Belongs to
     it { is_expected.to belong_to(:user) }
   end
   describe '#to_param' do
-    it 'returns `repo_slug` field as parameter' do
+    it 'returns `repo_name` field as parameter' do
       course = FactoryGirl.build(:course)
-      expect(course.to_param).to eq(course.repo_slug)
+      expect(course.to_param).to eq(course.repo_name)
     end
   end
 end

@@ -6,7 +6,7 @@ FactoryGirl.define do
     title       { Faker::Name.title }
     description { Faker::Lorem.paragraph }
     repo_id     { Faker::Number.unique.number(8) }
-    repo_slug   { Faker::Internet.user_name(nil, %w[_ -]) }
-    repo_url    { "https://github.com/#{user.login}/#{repo_slug}" }
+    repo_name   { Faker::Internet.user_name(nil, %w[_ -]) }
+    repo_url    { "https://github.com/#{user.login}/#{repo_name}" }
   end
 end

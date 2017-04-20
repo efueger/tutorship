@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_170_419_085_956) do
+ActiveRecord::Schema.define(version: 20_170_420_054_302) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20_170_419_085_956) do
     t.string 'title', null: false
     t.text 'description'
     t.bigint 'repo_id', null: false
-    t.string 'repo_slug', null: false
+    t.string 'repo_name', null: false
     t.string 'repo_url', null: false
     t.bigint 'user_id'
     t.datetime 'created_at', null: false
