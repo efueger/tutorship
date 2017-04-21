@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   scope format: false do
     devise_for :users, path: '/', controllers: {
-      omniauth_callbacks: 'sessions'
+      omniauth_callbacks: 'users/sessions'
     }
 
     as :users do

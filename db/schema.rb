@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20_170_420_054_302) do
     t.bigint 'user_id'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
+    t.index ['repo_id'], name: 'index_courses_on_repo_id', unique: true
     t.index ['user_id'], name: 'index_courses_on_user_id'
   end
 
