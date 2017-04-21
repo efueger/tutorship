@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   context 'validations' do
-    subject { FactoryGirl.build(:user) }
+    subject { build(:user) }
 
     # Uniqueness
     it do
@@ -32,7 +32,7 @@ RSpec.describe User, type: :model do
       expect(user.persisted?).to eq(true)
     end
     it 'returns an existing record details if any' do
-      existing_user = FactoryGirl.create(:user)
+      existing_user = create(:user)
       payload = fake_github
       payload[:uid] = existing_user.github_id
       user = User.find_or_create_by(payload)
@@ -83,7 +83,7 @@ RSpec.describe User, type: :model do
 
   describe '#to_param' do
     it 'returns `login` field as parameter' do
-      user = FactoryGirl.build(:user)
+      user = build(:user)
       expect(user.to_param).to eq(user.login)
     end
   end

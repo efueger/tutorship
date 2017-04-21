@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe Course, type: :model do
   context 'validations' do
-    subject { FactoryGirl.build(:course) }
+    subject { build(:course) }
 
     # Uniqueness
     it do
@@ -28,7 +28,7 @@ RSpec.describe Course, type: :model do
   end
   describe '#to_param' do
     it 'returns `repo_name` field as parameter' do
-      course = FactoryGirl.build(:course)
+      course = build(:course)
       expect(course.to_param).to eq(course.repo_name)
     end
   end

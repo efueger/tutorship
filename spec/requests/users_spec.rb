@@ -11,14 +11,14 @@ RSpec.describe 'Users', type: :request do
   end
   describe 'GET /@:login' do
     it 'to success' do
-      user = FactoryGirl.create(:user)
+      user = create(:user)
       get user_path login: user.login
       assert_response :success
     end
   end
   describe 'DELETE /@:login' do
     it 'to success' do
-      user = FactoryGirl.create(:user)
+      user = create(:user)
       delete user_path login: user.login
       assert_response :redirect
     end

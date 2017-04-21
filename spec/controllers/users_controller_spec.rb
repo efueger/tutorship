@@ -25,7 +25,7 @@ RSpec.describe UsersController, type: :controller do
   # User. As you add validations to User, be sure to
   # adjust the attributes here as well.
   let(:user) do
-    FactoryGirl.create(:user)
+    create(:user)
   end
 
   let(:invalid_attributes) do
