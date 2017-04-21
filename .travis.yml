@@ -6,6 +6,10 @@ rvm:
   - 2.4.1
   - ruby-head
 
+matrix:
+  allow_failures:
+  - rvm: ruby-head
+
 addons:
   postgresql: "9.4"
 
@@ -20,6 +24,5 @@ before_script:
 test_script:
   - rspec
 
-matrix:
-  allow_failures:
-  - rvm: ruby-head
+after_success:
+  - bundle exec codeclimate-test-reporter

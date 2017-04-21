@@ -1,10 +1,12 @@
 # Tutorship
 
 [![Join the chat at https://gitter.im/Tutorship/Lobby](https://badges.gitter.im/Tutorship/Lobby.svg)](https://gitter.im/Tutorship/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
-[![codecov](https://codecov.io/gh/tutorship/tutorship/branch/master/graph/badge.svg)](https://codecov.io/gh/tutorship/tutorship)
 [![Build Status](https://travis-ci.org/tutorship/tutorship.svg?branch=master)](https://travis-ci.org/tutorship/tutorship)
+[![Code Climate](https://codeclimate.com/github/tutorship/tutorship/badges/gpa.svg)](https://codeclimate.com/github/tutorship/tutorship)
+[![Issue Count](https://codeclimate.com/github/tutorship/tutorship/badges/issue_count.svg)](https://codeclimate.com/github/tutorship/tutorship)
+[![Test Coverage](https://codeclimate.com/github/tutorship/tutorship/badges/coverage.svg)](https://codeclimate.com/github/tutorship/tutorship/coverage)
 [![Dependency Status](https://gemnasium.com/badges/github.com/tutorship/tutorship.svg)](https://gemnasium.com/github.com/tutorship/tutorship)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg)](#contributors)
 
 A Platform to make learning programming fun!
 
