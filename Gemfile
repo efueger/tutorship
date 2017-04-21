@@ -42,6 +42,8 @@ group :development, :test do
   gem 'selenium-webdriver'
   # Add RSpec
   gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :development do
@@ -60,10 +62,8 @@ group :development do
 end
 
 group :test do
-  gem 'factory_girl_rails'
-  gem 'database_cleaner'
-  gem 'faker'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'database_cleaner'
   gem 'simplecov', require: false
   gem 'codecov', require: false
 end
