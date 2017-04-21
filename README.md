@@ -4,6 +4,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![codecov](https://codecov.io/gh/tutorship/tutorship/branch/master/graph/badge.svg)](https://codecov.io/gh/tutorship/tutorship)
 [![Build Status](https://travis-ci.org/tutorship/tutorship.svg?branch=master)](https://travis-ci.org/tutorship/tutorship)
+[![Dependency Status](https://gemnasium.com/badges/github.com/tutorship/tutorship.svg)](https://gemnasium.com/github.com/tutorship/tutorship)
 
 A Platform to make learning programming fun!
 
