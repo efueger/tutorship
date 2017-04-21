@@ -2,7 +2,7 @@
 
 class User < ApplicationRecord
   devise :omniauthable, omniauth_providers: [:github]
-  has_many :courses
+  has_many :courses, dependent: :destroy
 
   # Required fields
   validates :login, presence: true, uniqueness: { case_sensitive: false }

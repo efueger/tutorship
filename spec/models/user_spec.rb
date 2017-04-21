@@ -23,7 +23,7 @@ RSpec.describe User, type: :model do
     it { is_expected.to validate_presence_of(:avatar_url) }
 
     # Has many courses
-    it { is_expected.to have_many(:courses) }
+    it { is_expected.to have_many(:courses).dependent(:destroy) }
   end
 
   describe '.find_or_create_by' do
